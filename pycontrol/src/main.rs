@@ -38,7 +38,7 @@ fn handel_client(stream: TcpStream) {
 
 
 fn generat_client(ip: &str,port: &u32 ){
-    let client_template_string = fs::read_to_string("../pycontrol/src/test.txt").expect("error reading file");
+    let client_template_string = fs::read_to_string("../pycontrol/src/client_template.txt").expect("error reading file");
     let mut client_template_output = client_template_string.replace("{IP}", ip);
     client_template_output = client_template_output.replace("{PORT}", &format!("{}",port));
     let mut client = std::fs::File::create("../pyimplantclient/src/main.rs").expect("Error creating file");
