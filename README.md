@@ -18,6 +18,8 @@ a rust reverse shell kit for linux
 
 # To Do
 * write help message
+* create a way to switch beteen client threads to handle multiple clients at once
+* create a way to stop the program without using ctrl+c
 * encrypt communications
 * make window client generation method
 * makd mac client generation method
